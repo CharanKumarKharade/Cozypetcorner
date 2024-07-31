@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header {
+  height: 50px;
+  background-color: #9c969e;
+  display: flex;
+  justify-content: space-between;
+}
+header .search {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  border-radius: 20px;
+}
+header .search input {
+  border-radius: 20px;
+  border: 2px solid rgb(219, 209, 209);
+  margin-right: 20px;
+}
+h2 {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .nav-link {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+header .nav-link a {
+  margin-right: 20px;
+  padding-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 2s;
+}
+header .nav-link a:hover {
+  color: #d41818;
+  text-decoration: underline;
+}
+
+.hero-section {
+  height: 500px;
+  background-image: url("images/dogs.jpg");
+  background-size: cover; /* Ensure the image covers the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  position: relative;
+  animation: pictures 5s infinite linear;
+}
+@keyframes pictures {
+  from {
+    background-image: url("images/dogs.jpg");
+  }
+  to {
+    background-image: url("images/Cats.jpg");
+  }
+}
+.hero-section .main_part {
+  position: absolute;
+  top: 50%;
+  left: 34rem;
+}
+.hero-section .main_part h2 {
+  font-size: 30px;
+  color: #db7171;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.hero-section .main_part h2 .change:after {
+  content: "";
+  color: rgba(221, 12, 12, 0.822);
+  animation: change 5s infinite linear;
+}
+@keyframes change {
+  0% {
+    content: "' Dog '";
+  }
+  100% {
+    content: "' Cat '";
+  }
+}
+.hero-section .main_part p {
+  font-family: "Gill Sans" "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  font-weight: 600;
+  font-style: oblique;
+  font-size: 20px;
+}
