@@ -37,14 +37,45 @@ header .nav-link a {
   padding-left: 20px;
   text-decoration: none;
   font-size: 20px;
-  transition: all 2s;
+  transition: all 3s;
 }
 header .nav-link a:hover {
   color: #d41818;
   text-decoration: underline;
 }
-
+/* header .nav-link a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Position below the text */
+/* width: 100%;
+  height: 2px;
+  background: #be0707; Underline color
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease; */
+/* }
+header .nav-link a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}  */
+header .search .sample::after {
+  content: "abv";
+  animation: sample 2s alternate infinite ease-in-out;
+}
+@keyframes sample {
+  0% {
+    content: "Dogs";
+  }
+  50% {
+    content: "Cats";
+  }
+  100% {
+    content: "Donate";
+  }
+}
 .hero-section {
+  display: flex;
   height: 500px;
   background-image: url("images/dogs.jpg");
   background-size: cover; /* Ensure the image covers the entire viewport */
