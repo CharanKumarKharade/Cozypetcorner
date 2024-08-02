@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link href="style.css" rel="stylesheet" />
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="main.html" style="text-align: center; text-decoration: none"
+        ><h2>Cozy-Dozy</h2></a
+      >
+      <div class="search">
+        <input type="text" id="search" placeholder="Search here" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="nav-link">
+        <a href="">About Us</a>
+        <a id="options" href="">Donate</a>
+        <a href="contacts.html">Contact Us</a>
+      </div>
+    </header>
+    <div class="formdata">
+        <h2>Contact Form</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="options">Category</label>
+            <input type="radio" id="Adopt" name="Category" value="Adopt">
+            <label for="Adopt">Adopt</label>
+            <input type="radio" id="Donate" unchecked name="Donate" value="Donate">
+            <label for="Donate">Donate</label><br>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" cols="15"  required style="resize: none;"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

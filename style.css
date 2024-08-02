@@ -90,7 +90,7 @@ header .nav-link a:hover::after {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent repeating the image */
   position: relative;
-  animation: pictures 3s ease-out infinite normal forwards;
+  animation: pictures 8s ease-out infinite normal forwards;
 }
 @keyframes pictures {
   from {
@@ -103,7 +103,7 @@ header .nav-link a:hover::after {
 .hero-section .main_part {
   position: absolute;
   top: 50%;
-  left: 34rem;
+  left: 34px;
 }
 .hero-section .main_part h2 {
   font-size: 30px;
@@ -135,12 +135,17 @@ header .nav-link a:hover::after {
   display: flex;
   margin: 25px 0 - 25px;
 }
+
 .Testimonials {
   display: flex;
   background-color: #b32424;
   justify-content: center;
   align-items: center;
   margin: 2px 2px 2px 2px;
+}
+.Testimonials .container {
+  border: 2px solid black;
+  margin: 1px 1px 1px 1px;
 }
 .Testimonials .container p,
 h2 {
@@ -164,4 +169,23 @@ footer {
   justify-content: space-between;
   bottom: 0;
   width: auto;
+}
+
+.formdata {
+  border-style: dotted;
+  border-color: #db7171;
+  border-width: 2px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 50%;
+  margin-left: 36%;
+  height: auto;
+  max-width: fit-content;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(201, 25, 25, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
