@@ -90,7 +90,7 @@ header .nav-link a:hover::after {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent repeating the image */
   position: relative;
-  animation: pictures 5s infinite linear;
+  animation: pictures 3s ease-out infinite normal forwards;
 }
 @keyframes pictures {
   from {
@@ -141,6 +141,12 @@ header .nav-link a:hover::after {
   justify-content: center;
   align-items: center;
   margin: 2px 2px 2px 2px;
+}
+.Testimonials .container p,
+h2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .Testimonials .container i {
   display: flex;
