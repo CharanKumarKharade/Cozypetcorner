@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 
+  /* background-color: #9c969e; */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 header {
@@ -9,6 +10,7 @@ header {
   background-color: #9c969e;
   display: flex;
   justify-content: space-between;
+  /* position: fixed; */
 }
 header .search {
   display: flex;
@@ -61,11 +63,13 @@ header .nav-link a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }  */
-header .search .sample::after {
-  content: "abv";
-  animation: sample 2s alternate infinite ease-in-out;
+/* input::placeholder {
+  color: #db7171;
+  font-style: italic;
+  animation: styles 5s infinite;
 }
-@keyframes sample {
+
+@keyframes styles {
   0% {
     content: "Dogs";
   }
@@ -75,8 +79,10 @@ header .search .sample::after {
   100% {
     content: "Donate";
   }
-}
+} */
+
 .hero-section {
+  width: 100%;
   display: flex;
   height: 500px;
   background-image: url("images/dogs.jpg");
@@ -121,15 +127,35 @@ header .search .sample::after {
   font-family: "Gill Sans" "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
   font-weight: 600;
+
   font-style: oblique;
   font-size: 20px;
 }
 .section {
   display: flex;
+  margin: 25px 0 - 25px;
 }
 .Testimonials {
   display: flex;
   background-color: #b32424;
   justify-content: center;
   align-items: center;
+  margin: 2px 2px 2px 2px;
+}
+.Testimonials .container i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maincontent {
+  background-color: #9c969e;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  width: auto;
 }
