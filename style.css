@@ -203,3 +203,13 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
+footer .foot2 ul li a {
+  text-decoration: none;
+}
+footer .foot2 ul li {
+  margin-right: 10px;
+  list-style: none;
+}
+footer .foot3 a {
+  padding-left: 5px;
+}
