@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
     <link href="style.css" rel="stylesheet" />
-        <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -28,7 +28,11 @@
         <a href="contacts.html">Contact Us</a>
       </div>
     </header>
-    <div class="formdata">
+    <div class="body-content">
+      <div class="img">
+        <img src="donations.jpeg" alt="Contact Image" />
+      </div>
+      <div class="formdata">
         <h2>Contact Form</h2>
         <form>
           <div class="form-group">
@@ -41,15 +45,21 @@
           </div>
           <div class="form-group">
             <label for="options">Category</label>
-            <input type="radio" name="Category" value="Adopt">
+            <input type="radio" name="Category" value="Adopt" />
             Adopt
-            <input type="radio"  name="Category" value="Donate">
-            Donate<br>
+            <input type="radio" name="Category" value="Donate" />
+            Donate<br />
           </div>
 
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" rows="5" cols="15"  required style="resize: none;"></textarea>
+            <textarea
+              id="message"
+              rows="5"
+              cols="15"
+              required
+              style="resize: none"
+            ></textarea>
           </div>
           <div class="form-group">
             <button id="button" type="submit">Submit</button>
@@ -57,6 +67,7 @@
         </form>
       </div>
     </div>
+
     <footer>
       <div class="foot1">
         <p>2022 Cozy-Dozy. All rights reserved.</p>
@@ -75,11 +86,15 @@
       </div>
       <div class="foot3">
         <p>Social Media</p>
-        <a href="https://www.facebook.com/login.php/"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/login.php/"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/"
+          ><i class="fab fa-instagram"></i
+        ></a>
         <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
       </div>
     </footer>
-     <script src="app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
