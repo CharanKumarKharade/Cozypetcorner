@@ -12,6 +12,11 @@ header {
   justify-content: space-between;
   /* position: fixed; */
 }
+@media only screen and (max-width: 550px) {
+  header {
+    width: max-content;
+  }
+}
 header .search {
   display: flex;
   width: 400px;
@@ -175,12 +180,12 @@ footer {
   border-color: #db7171;
   border-width: 2px;
   padding: 10px;
-  margin: 10px;
+  margin-bottom: 10px;
   border-radius: 5px;
   width: 50%;
   margin-left: 36%;
   padding: 25px;
-  margin-top: 10%;
+  margin-top: 6%;
   height: auto;
   max-width: fit-content;
   transition: background-color 0.3s ease-in-out;
@@ -191,7 +196,7 @@ footer {
   align-items: center;
 }
 .formdata .form-group {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .formdata button {
   padding: 10px 20px;
@@ -222,4 +227,8 @@ footer .foot3 a {
   border: 1px solid #ddd;
   padding: 20px;
   margin-bottom: 20px;
+}
+.option {
+  margin: 3px 3px 3px 3px;
+  padding: 20px;
 }
